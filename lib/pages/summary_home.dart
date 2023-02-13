@@ -63,14 +63,14 @@ class _SummaryHomePageState extends State<SummaryHomePage> {
         children: <Widget>[
           new Positioned(
             child: Container(
-              padding: EdgeInsets.only(top: 10),
+              padding: EdgeInsets.only(top: 10, left: 80),
               child: Text(
-                'Tugas Summary 1',
+                'Tugas Summary 1 test test test asdf test etst etsa aweeta',
                 style: blackTextStyle.copyWith(
                   fontSize: 16,
                   fontWeight: bold,
                 ),
-                textAlign: TextAlign.center,
+                textAlign: TextAlign.left,
               ),
               margin: EdgeInsets.only(left: 45),
               height: 150,

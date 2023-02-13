@@ -12,13 +12,17 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
+      body: Container(
+        width: MediaQuery.of(context).size.width,
         child: ListView(
-          padding: EdgeInsets.symmetric(horizontal: 24),
+          padding: EdgeInsets.symmetric(horizontal: 0),
           children: [
             title(),
             button(),
             button2(),
+            SizedBox(
+              height: 35,
+            ),
           ],
         ),
       ),
@@ -50,7 +54,7 @@ class _HomePageState extends State<HomePage> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           SizedBox(
-            width: 120,
+            width: MediaQuery.of(context).size.width / 2.5,
             height: 120,
             child: TextButton(
               onPressed: () {
@@ -75,7 +79,7 @@ class _HomePageState extends State<HomePage> {
             width: 15,
           ),
           SizedBox(
-            width: 120,
+            width: MediaQuery.of(context).size.width / 2.5,
             height: 120,
             child: TextButton(
               onPressed: () {
@@ -108,7 +112,7 @@ class _HomePageState extends State<HomePage> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           SizedBox(
-            width: 120,
+            width: MediaQuery.of(context).size.width / 2.5,
             height: 120,
             child: TextButton(
               onPressed: () {
@@ -133,7 +137,7 @@ class _HomePageState extends State<HomePage> {
             width: 15,
           ),
           SizedBox(
-            width: 120,
+            width: MediaQuery.of(context).size.width / 2.5,
             height: 120,
             child: TextButton(
               onPressed: () {

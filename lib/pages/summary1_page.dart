@@ -74,6 +74,7 @@ class _Summary1PageState extends State<Summary1Page> {
         borderRadius: BorderRadius.circular(9),
       ),
       child: TextFormField(
+        maxLines: null,
         decoration: InputDecoration.collapsed(
           hintText: 'Konten',
           hintStyle: blackTextStyle.copyWith(
